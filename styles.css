@@ -95,6 +95,18 @@ p {
   margin: 32px 0;
   box-shadow: var(--shadow);
 }
+.logo {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.logo img {
+  width: 180px;       /* bigger for main branding */
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 .video-placeholder p {
   margin: 0;
