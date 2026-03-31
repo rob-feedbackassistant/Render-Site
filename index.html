@@ -19,7 +19,7 @@
       <h1>Feedback Assistant</h1>
 
       <p class="lead">
-        A Chrome extension that helps you quickly insert pre-written feedback comments into Google Docs, Sheets, and Slides using a personalised comment bank stored in Google Sheets.
+        A Chrome extension that helps teachers and assessors quickly insert pre-written feedback comments into Google Docs, Sheets, and Slides using comment banks created and managed within Feedback Assistant.
       </p>
     </div>
 
@@ -38,7 +38,8 @@
       <p>
         Feedback Assistant allows teachers and assessors to create and manage a bank of feedback comments in Google Sheets.
         Each comment is linked to a short abbreviation, allowing them to quickly insert consistent, detailed feedback during marking.
-        Users can organise multiple comment banks across different spreadsheets and tabs, allowing them to manage feedback for different subjects, units, or classes.
+        Users can organise multiple comment banks across different spreadsheets and tabs created and managed within the application,
+        allowing them to manage feedback for different subjects, units, or classes.
       </p>
 
       <p>
@@ -46,27 +47,32 @@
         automatically replaces it with the full feedback comment.
       </p>
 
+      <p>
+        The extension operates only within comment boxes and does not modify the main document content.
+      </p>
+
       <h2>How It Uses Google Data</h2>
       <p>
-        The extension uses Google authentication to securely access the user’s own Google Drive and Google Sheets.
+        The extension uses Google authentication to securely access the user’s Google Drive and Google Sheets.
       </p>
 
       <p>
-        It only reads data from user-selected spreadsheets to retrieve abbreviations and associated feedback comments.
+        It creates and manages its own folder and comment bank spreadsheets within the user’s Google Drive,
+        and reads and updates data only from those spreadsheets.
       </p>
 
       <p>
-        The extension does not access emails, contacts, or any unrelated data.
+        The extension does not access or scan the user’s entire Google Drive and does not access emails, contacts, or any unrelated data.
       </p>
 
       <h2>Permissions</h2>
       <p>
-        Feedback Assistant requests access to Google Drive and Google Sheets solely to load and read the user’s
-        selected comment bank.
+        Feedback Assistant requests access to Google Drive using a limited scope that allows it to create and manage its own
+        comment bank spreadsheets and folders within the user’s account.
       </p>
 
       <p>
-        It also interacts with Google Docs, Sheets, and Slides to insert feedback comments based on user input.
+        It also interacts with Google Docs, Sheets, and Slides to insert feedback comments into comment boxes based on user input.
       </p>
 
       <h2>Privacy</h2>
@@ -75,7 +81,7 @@
       </p>
 
       <p>
-        All data remains within the user’s Google account or local browser storage.
+        All data remains within the user’s Google account or local browser storage and is fully controlled by the user.
       </p>
 
       <div class="home-links">
