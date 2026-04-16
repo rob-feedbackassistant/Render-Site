@@ -109,7 +109,7 @@ p {
 
 .video-wrap {
   background: var(--white);
-  border: 2px dashed var(--green-secondary);
+  border: 1px solid var(--green-border);
   border-radius: var(--radius);
   padding: 32px 20px;
   margin: 32px 0;
