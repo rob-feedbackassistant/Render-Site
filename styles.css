@@ -85,6 +85,33 @@ p {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 32px 24px;
+  margin-bottom: 24px;
+}
+.prompt-note {
+  background: #f0f6f0;
+  border-left: 4px solid var(--green-primary);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 12px 0 18px;
+}
+.copy-btn {
+  display: inline-block;
+  margin: 8px 0 10px;
+  background: var(--green-primary);
+  color: var(--white);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+}
+
+.copy-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 /* HERO */
@@ -158,6 +185,71 @@ a:focus {
 
 strong {
   color: var(--green-dark);
+}
+.prompt-library-intro {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.prompt-library-intro h3 {
+  color: var(--green-primary);
+  margin-bottom: 10px;
+}
+
+.prompt-library {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.prompt-item {
+  background: #f8fbf7;
+  border: 1px solid var(--green-border);
+  border-radius: 12px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.prompt-item summary {
+  cursor: pointer;
+  padding: 16px 18px;
+  font-weight: 700;
+  color: var(--green-primary);
+  list-style: none;
+}
+
+.prompt-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.prompt-item summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.prompt-item[open] summary::after {
+  content: "–";
+}
+
+.prompt-content {
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--green-border);
+}
+
+.prompt-box {
+  width: 100%;
+  min-height: 320px;
+  margin-top: 10px;
+  padding: 14px;
+  border: 1px solid var(--green-border);
+  border-radius: 10px;
+  background: #ffffff;
+  color: var(--green-dark);
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  resize: vertical;
 }
 
 /* FOOTER */

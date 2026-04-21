@@ -50,7 +50,391 @@
         Works with Google Docs, Sheets and Slides • No data collected • Secure Google login
       </p>
     </div>
+    
+    <div class="card">
+      <div class="prompt-library-intro">
+        <h3>Create a Comment Bank with AI</h3>
+        <p class="small-text">
+          These prompts are designed to help you generate a starting point for a comment bank using ChatGPT.
+          They may still need checking and amending, but they can save time and help you get started more quickly.
+          They may not work perfectly for every assignment, but they should still save you time in getting one set up.
+        </p>
+        <p class="small-text">
+          These prompts are designed to follow the flow of the assignment. Even though they may generate a large number of abbreviations, you do not need to remember them. You can simply open a comment box and use the side panel to click and insert comments in order, following the structure of the assignment as you mark.
+        </p>
+        <p><strong>No need to memorise abbreviations.</strong></p>
+      </div>
 
+      <div class="prompt-library">
+
+        <details class="prompt-item">
+          <summary>Before you start with ChatGPT</summary>
+          <div class="prompt-content">
+            <p>
+              To use these prompts properly, you will need a ChatGPT account so that you can attach an assignment brief. 
+            </p>
+            <p class="prompt-note">
+              You can do this with a free ChatGPT account.
+            </p>
+
+            <p><strong>Why this matters</strong></p>
+            <p>
+              These prompts work best when ChatGPT can analyse the actual assignment brief. If you are not signed in,
+              you may not be able to attach files, which means the prompt will be less accurate.
+            </p>
+
+            <p><strong>How to get started</strong></p>
+            <ol>
+              <li>Create or sign in to a ChatGPT account.</li>
+              <li>Open a new chat.</li>
+              <li>Attach the assignment brief.</li>
+              <li>Copy and paste one of the prompts below.</li>
+              <li>In the Feedback Assistant side panel, create a new comment bank or open an existing one.</li>
+              <li>It is important to note that the comment bank sheet must be created within the extension. The extension can not read sheets that are created outside of the extension.</li>
+              <li>Paste the generated abbreviations and comments into the spreadsheet created by the extension, or into a new tab within an existing comment bank.</li>
+              <li>Return to the side panel and sync the sheet.</li>
+              <ki>If creating a new tab, you may need to close the extension and reload it.</ki>
+            </ol>
+
+            <p class="small-text">
+              These prompts are intended to give you a strong starting point. You may still want to edit the wording,
+              remove comments you do not need, or add comments specific to your own marking style. 
+              They are generic prompts, so once you recieve your ouput from ChatGPT you can ask ChatGPT to make any changes you feel are necessary. 
+            </p>
+          </div>
+        </details>
+
+        <details class="prompt-item">
+          <summary>BTEC assignment prompt</summary>
+          <div class="prompt-content">
+            <p class="small-text">
+              Best for BTEC-style assignment briefs where tasks contain multiple requirements and Pass, Merit and Distinction are applied across tasks.
+            </p>
+
+            <p><strong>What it does</strong></p>
+            <p>
+              This prompt analyses the structure of the brief, splits tasks by command words, identifies marking points,
+              and generates a structured comment bank linked to criteria.
+            </p>
+
+            <p><strong>Prompt</strong></p>
+            <button class="copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+            <textarea class="prompt-box" readonly>I am a teacher creating a comment bank for fast marking using a Chrome extension.
+
+      I will attach a BTEC assignment brief.
+
+      Your job is to ANALYSE the assignment and GENERATE a complete marking comment bank as a downloadable .xlsx file.
+
+      This prompt is designed for BTEC-style assignments where:
+      - Tasks contain multiple requirements
+      - Criteria (Pass, Merit, Distinction) are applied across tasks
+      - One task may contain multiple criteria
+
+      ----------------------------------------
+
+      STEP 1: IDENTIFY CRITERIA
+
+      Extract all criteria (e.g. P1, P2, M1, D1).
+
+      Understand what each level represents:
+      - Pass → explain / describe / show understanding  
+      - Merit → apply / assess / compare  
+      - Distinction → evaluate / justify / analyse  
+
+      ----------------------------------------
+
+      STEP 2: REBUILD TASK STRUCTURE (CRITICAL)
+
+      Work through the assignment in order.
+
+      For each task:
+
+      - Identify all command words used (e.g. explain, describe, assess, compare, justify, evaluate)
+
+      - Each command word represents a separate marking requirement
+
+      You must:
+
+      - split each task into separate “command blocks”
+      - treat each command block as its own marking section
+
+      ----------------------------------------
+
+      STEP 3: MAP COMMAND BLOCKS → CRITERIA
+
+      For each command block:
+
+      - determine which criteria it links to (P, M, D)
+      - ensure:
+        - simpler command words link to Pass  
+        - more complex command words link to Merit/Distinction  
+
+      IMPORTANT:
+      - do NOT merge multiple command blocks together  
+      - each block must map clearly to criteria  
+
+      ----------------------------------------
+
+      STEP 4: IDENTIFY MARKING POINTS
+
+      Within each command block:
+
+      - identify the specific points the student is expected to include
+
+      These should be:
+
+      - individual ideas or concepts  
+      - specific enough to be marked independently  
+      - something a student could include or miss  
+
+      IMPORTANT:
+      - break content into multiple marking points  
+      - do NOT keep them as one broad idea  
+
+      ----------------------------------------
+
+      STEP 5: GENERATE COMMENTS (MARKING STYLE)
+
+      Work through the assignment in order:
+
+      For EACH marking point:
+
+      Generate:
+
+      - a pass-level comment  
+      - a merit-level comment  
+      - a distinction-level comment  
+
+      Each comment must:
+
+      - refer to a specific marking point  
+      - reflect the command word (e.g. explain, compare, evaluate)  
+      - reflect the level of response  
+      - feel like a real marking comment  
+
+      ----------------------------------------
+
+      COMMENT STYLE (CRITICAL)
+
+      Use this structure:
+
+      Achieved:
+      ✓ [criteria] [clear judgement] of [specific point]
+
+      Not achieved:
+      [criteria] You have not covered [specific point]
+
+      Examples of tone:
+      - ✓ P1 Good explanation of [point]  
+      - ✓ M1 Clear comparison of [point]  
+      - ✓ D1 Detailed evaluation of [point]  
+      - P1 You have not covered [point]  
+
+      IMPORTANT:
+      - do NOT write generic comments  
+      - each comment must refer to ONE idea  
+
+      ----------------------------------------
+
+      ABBREVIATION RULES (SIMPLIFIED)
+
+      Column A must contain:
+
+      [criteria][element]
+
+      Examples:
+      p1a
+      p1b
+      m1a
+      d1a
+
+      RULES:
+      - no spaces  
+      - lowercase only  
+      - element codes should follow the order of marking points  
+      - keep abbreviations simple and easy to type  
+
+      ----------------------------------------
+
+      ORDERING RULE
+
+      The comment bank must:
+
+      - follow the task order exactly  
+      - follow command block order within tasks  
+      - follow marking point order within blocks  
+      - within each point:
+        pass → merit → distinction  
+
+      ----------------------------------------
+
+      OUTPUT FORMAT
+
+      DO NOT display the full comment bank in the chat.
+
+      Instead:
+
+      1. Generate a downloadable Excel file (.xlsx) with:
+        - Column A: Abbreviation  
+        - Column B: Comment  
+        - Sheet name: "Comment Bank"  
+
+      2. Provide a short explanation of how the abbreviations work  
+
+      ----------------------------------------
+
+      FINAL CHECK
+
+      Ensure:
+
+      - tasks are correctly split by command words  
+      - criteria are correctly mapped  
+      - marking points are specific and detailed  
+      - comments reflect real marking  
+      - no generic feedback  
+      - structure is logical for marking  
+      - Excel file is ready for use  
+
+      ----------------------------------------
+
+      Now generate the comment bank based on the assignment brief.</textarea>
+          </div>
+        </details>
+
+        <details class="prompt-item">
+          <summary>Criteria-based assignment prompt</summary>
+          <div class="prompt-content">
+            <p class="small-text">
+              Best for criteria-based assignments, often NCFE style, where each criterion is assessed more directly and individually.
+            </p>
+
+            <p><strong>What it does</strong></p>
+            <p>
+              This prompt treats each criterion separately, breaks tasks into evidence elements where needed,
+              and generates concise, spreadsheet-ready comments for pass, merit, distinction and not achieved.
+            </p>
+
+            <p><strong>Prompt</strong></p>
+            <button class="copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+            <textarea class="prompt-box" readonly>Assignment brief prompt:
+
+      I am a college teacher in England creating a comment bank for fast marking using a Chrome extension.
+
+      I have attached an assignment brief that includes assessment criteria and tasks. Tasks may contain multiple required elements (e.g. structures, stages, components, comparisons, processes, case study sections).
+
+      Your job is to generate a marking comment bank in Excel (.xlsx format) that I can upload into Google Sheets and use with abbreviation shortcuts while marking.
+
+      IMPORTANT CONTEXT (critical for accuracy)
+      This sheet will be used in a live marking environment where I type abbreviations (e.g. 1.2d) that expand into full comments in a Google Docs comment box.
+
+      The sheet must therefore:
+      - Be fast to scan
+      - Use short, consistent abbreviations
+      - Provide precise, element-specific feedback
+      - Avoid long or generic comments
+
+      ----------------------------------------
+
+      ABBREVIATION RULES (MANDATORY)
+
+      Column A must contain abbreviations in this exact format:
+
+      [criteria].[grade]
+
+      Examples:
+      1.1p
+      1.1m
+      1.1d
+      1.1n
+
+      Rules:
+      - No spaces
+      - Lowercase grade letters only (p, m, d, n)
+      - "n" = Not Achieved
+      - One row per grade per evidence element
+
+      ----------------------------------------
+
+      CRITICAL INTERPRETATION RULES
+
+      Grades are awarded at criteria level, but evidence is produced at task and sub-task level.
+
+      If a task includes multiple elements (e.g. multiple structures, stages, comparisons, or components):
+      - Treat each element as a separate feedback opportunity
+      - Generate separate comments for each element where meaningful
+
+      DO NOT:
+      - Combine multiple elements into one generic comment
+      - Treat elements as separate grades
+
+      ----------------------------------------
+
+      SHEET STRUCTURE
+
+      Column A: Abbreviation (e.g. 1.2d)
+      Column B: Comment only
+
+      ----------------------------------------
+
+      COMMENT FORMAT RULES
+
+      All comments must:
+
+      - Be 1–2 sentences maximum
+      - Be written for a Google Docs comment box
+      - Be student-friendly and conversational
+      - Be specific to the exact evidence element
+
+      Achieved comments (p, m, d):
+      - MUST begin with: ✓ 1.X –
+      - MUST start with a natural positive phrase:
+        (e.g. Well done, Good work, Strong work, Excellent work)
+
+      Not Achieved (n):
+      - MUST NOT include a tick
+      - MUST start with: 1.X –
+      - MUST be neutral and clearly state what is missing
+      - MUST NOT give step-by-step instructions
+
+      ----------------------------------------
+
+      GRADING EXPECTATIONS
+
+      Pass:
+      - Basic correct description or identification
+
+      Merit:
+      - Clear explanation, accurate links, some depth
+
+      Distinction:
+      - Detailed explanation, clear links, analysis, synthesis or justification
+
+      ----------------------------------------
+
+      OUTPUT REQUIREMENTS
+
+      - Generate a complete Excel file (.xlsx)
+      - Ensure it is ready to upload directly into Google Drive
+      - Ensure all abbreviations are consistent and usable for typing
+      - Ensure comments are concise and realistic for marking use
+
+      ----------------------------------------
+
+      FINAL CHECK BEFORE OUTPUT
+
+      - Abbreviations are clean (e.g. 2.3m, not "2.3 M – ...")
+      - Comments are short and not repetitive
+      - Each row represents a meaningful marking decision
+      - Language is natural and suitable for students
+
+      ----------------------------------------
+
+      Now generate the comment bank based on the assignment brief provided.</textarea>
+          </div>
+        </details>
+
+      </div>
+    </div>  
     <!-- MAIN CONTENT -->
     <div class="card">
 
@@ -118,6 +502,22 @@
     </footer>
 
   </div>
+<script>
+function copyPrompt(button) {
+  const textarea = button.nextElementSibling;
 
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // mobile support
+
+  navigator.clipboard.writeText(textarea.value).then(() => {
+    const originalText = button.innerText;
+    button.innerText = "Copied!";
+    
+    setTimeout(() => {
+      button.innerText = originalText;
+    }, 2000);
+  });
+}
+</script>
 </body>
 </html>
