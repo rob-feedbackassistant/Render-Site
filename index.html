@@ -305,7 +305,7 @@
           <summary>Criteria-based assignment prompt</summary>
           <div class="prompt-content">
             <p class="small-text">
-              Best for criteria-based assignments, often NCFE style, where each criterion is assessed more directly and individually.
+              Best for criteria-based assignments, where each criterion is assessed more directly and individually. For example, where criteria point 1.1, 1.2, 1.3 has pass, merit and/ or distinction available.
             </p>
 
             <p><strong>What it does</strong></p>
@@ -433,6 +433,196 @@
           </div>
         </details>
 
+        <details class="prompt-item">
+          <summary>Task-based assignment prompt (single learning outcome)</summary>
+          <div class="prompt-content">
+            <p class="small-text">
+              Best for assignments with a single learning outcome or broad grading criteria, where the task is broken down into multiple sections or required content. 
+              For example, NCFE level 3 assignments or BTEC tasks where Pass, Merit and Distinction are applied across the whole task rather than separate criteria points. 
+            </p>
+
+            <p><strong>What it does</strong></p>
+            <p>
+              This prompt follows the structure of the assignment task, breaks it into specific marking points,
+              and generates clear Pass, Merit and Distinction comments for each part. Comments are written using the wording
+              of the task so they can be pasted directly into student feedback without editing.
+            </p>
+
+            <p><strong>Prompt</strong></p>
+            <button class="copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+            <textarea class="prompt-box" readonly>Assignment brief prompt:
+
+        I am a teacher creating a comment bank for fast marking using a Chrome extension.
+
+        I have attached an assignment brief.
+
+        Your job is to ANALYSE the assignment and GENERATE a complete marking comment bank as a downloadable Excel (.xlsx) file.
+
+        IMPORTANT CONTEXT (critical for accuracy)
+        This sheet will be used in a live marking environment where I type abbreviations (e.g. pa, mb, dc) that expand into full comments in a comment box.
+
+        The sheet must therefore:
+        - Be fast to scan
+        - Use short, simple abbreviations
+        - Follow the structure of the task
+        - Provide specific, ready-to-use feedback
+        - Avoid generic or placeholder comments
+
+        ----------------------------------------
+
+        STEP 1: IDENTIFY GRADING DESCRIPTORS
+
+        Extract the Pass, Merit and Distinction descriptors.
+
+        Understand what each level represents:
+        - Pass → basic description or coverage of content
+        - Merit → clear explanation using appropriate or specialist language
+        - Distinction → accurate, detailed or well-applied use of knowledge
+
+        ----------------------------------------
+
+        STEP 2: REBUILD TASK STRUCTURE (CRITICAL)
+
+        Work through the assignment in the order it is written.
+
+        - Identify all sections, sub-sections and listed requirements
+        - Treat each bullet point, heading or required content area as a separate section
+
+        IMPORTANT:
+        - The task structure defines the marking structure
+        - Do NOT rely on learning outcome references to structure comments
+
+        ----------------------------------------
+
+        STEP 3: IDENTIFY MARKING POINTS
+
+        Within each section:
+
+        - Identify the specific points the student is expected to include
+
+        These should be:
+        - individual ideas or concepts
+        - specific enough to be marked independently
+        - something a student could include or miss
+
+        IMPORTANT:
+        - Break sections into multiple marking points where needed
+        - Do NOT treat large sections as a single block
+
+        ----------------------------------------
+
+        STEP 4: GENERATE COMMENTS (TASK-LED MARKING)
+
+        For EACH marking point:
+
+        Generate:
+        - a Pass-level comment
+        - a Merit-level comment
+        - a Distinction-level comment
+
+        Each comment must:
+        - refer to a specific marking point
+        - reflect the level of response
+        - relate clearly to the wording of the task
+        - feel like a real marking comment
+
+        ----------------------------------------
+
+        TASK LANGUAGE RULE (CRITICAL)
+
+        All comments must use the wording from the assignment brief.
+
+        You must:
+        - refer directly to what the student was asked to include
+        - use the same terminology as the task
+
+        DO NOT:
+        - introduce your own examples
+        - use phrases like "e.g." or "for example"
+        - replace task wording with generic phrases
+
+        Comments must be ready to use without editing.
+
+        ----------------------------------------
+
+        COMMENT FORMAT RULES
+
+        All comments must:
+
+        - Be 1–2 sentences maximum
+        - Be written for a comment box
+        - Be student-friendly and clear
+        - Focus on ONE marking point only
+
+        Structure:
+
+        Pass:
+        ✓ P Good description of [task requirement]
+
+        Merit:
+        ✓ M Clear explanation of [task requirement]
+
+        Distinction:
+        ✓ D Accurate and detailed application of [task requirement]
+
+        Not achieved:
+        P You have not covered [task requirement]
+
+        ----------------------------------------
+
+        ABBREVIATION RULES (MANDATORY)
+
+        Column A must contain abbreviations in this format:
+
+        [level][element]
+
+        Examples:
+        pa
+        ma
+        da
+        pb
+        mb
+        db
+
+        Rules:
+        - No spaces
+        - Lowercase only
+        - P = Pass, M = Merit, D = Distinction
+        - Element letters follow the order of the task
+        - Keep abbreviations short and easy to type
+
+        ----------------------------------------
+
+        SHEET STRUCTURE
+
+        Column A: Abbreviation (e.g. pa, mb)
+        Column B: Comment only
+
+        ----------------------------------------
+
+        OUTPUT REQUIREMENTS
+
+        - Generate a complete Excel file (.xlsx)
+        - Ensure it is ready to upload directly into Google Drive
+        - Ensure abbreviations are consistent and usable
+        - Ensure comments follow the structure of the task
+
+        ----------------------------------------
+
+        FINAL CHECK BEFORE OUTPUT
+
+        - Comments follow the exact task order
+        - Each marking point has P, M and D comments
+        - No generic or placeholder wording
+        - Comments reflect what the student was asked to include
+        - Abbreviations are clean and consistent
+        - Language is natural and ready for student feedback
+
+        ----------------------------------------
+
+        Now generate the comment bank based on the assignment brief provided.</textarea>
+          </div>
+        </details>
       </div>
     </div>  
     <!-- MAIN CONTENT -->
